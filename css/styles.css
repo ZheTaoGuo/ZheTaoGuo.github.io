@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
 body {
   font-family: "Lato", sans-serif;
@@ -9,22 +9,29 @@ body.active {
   z-index: -1;
 }
 
-.text-slider-items{
+.text-slider-items {
   color: white;
 }
-.intro-subtitle{
 
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
-}
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 472px;}
+.text-slider-items {
+  animation: typing 2.5s steps(20, end) forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-family: "Source Code Pro", monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 auto;
+  display: inline-block;
 }
 
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .no-js #experience-timeline > div {
@@ -643,6 +650,11 @@ footer {
 }
 .optional-section-block ul {
   padding: 0 0 0 15px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
 }
 @media only screen and (max-width: 750px) {
   #experience-timeline:before,
